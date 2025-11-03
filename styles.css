@@ -1,69 +1,128 @@
+/* Style global */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #222;
+  background-color: #fafafa;
+}
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Club TDTA - Cergy</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Club TDTA - Cergy</h1>
-    <nav>
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#styles">Nos Styles</a></li>
-        <li><a href="#galerie">Galerie</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+/* En-tête */
+header {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
 
-  <section id="accueil" class="hero">
-    <div class="hero-content">
-      <h2>La passion de la danse à Cergy</h2>
-      <p>Découvrez nos cours de danse pour tous les niveaux dans une ambiance élégante et dynamique.</p>
-      <button id="decouvrirBtn">Découvrir nos cours</button>
-    </div>
-  </section>
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 10px 0;
+}
 
-  <section id="styles">
-    <h2>Nos styles de danse</h2>
-    <div class="styles-container">
-      <div class="style"><h3>Modern Jazz</h3></div>
-      <div class="style"><h3>Street Jazz</h3></div>
-      <div class="style"><h3>Urban</h3></div>
-      <div class="style"><h3>Contemporain</h3></div>
-      <div class="style"><h3>Heels</h3></div>
-      <div class="style"><h3>Hip-Hop</h3></div>
-    </div>
-  </section>
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  <section id="galerie">
-    <h2>Galerie</h2>
-    <div class="galerie">
-      <!-- Images liées à la danse -->
-      <img src="https://images.unsplash.com/photo-1600905358710-4d8690049b7a" alt="Cours de danse moderne" title="Cours de danse moderne">
-      <img src="https://images.unsplash.com/photo-1518217565281-07b881b4f575" alt="Danse hip-hop" title="Danse hip-hop">
-      <img src="https://images.unsplash.com/photo-1596506090631-7270401b6587" alt="Danse contemporaine" title="Danse contemporaine">
-    </div>
-    <!-- Vidéo de danse -->
-    <video controls width="320">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la lecture vidéo.
-    </video>
-  </section>
+nav a:hover {
+  color: #c79bff;
+}
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:contact@clubtdta.fr">contact@clubtdta.fr</a></p>
-  </section>
+/* Section accueil */
+.hero {
+  background: url("https://images.unsplash.com/photo-1606902197499-73860b0175e1") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  <footer>
-    <p>&copy; 2025 Club TDTA - Cergy. Tous droits réservés.</p>
-  </footer>
+.hero-content h2 {
+  font-size: 2.5em;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+button {
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #4a0c70;
+}
+
+/* Styles de danse */
+#styles {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.styles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.style {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  width: 180px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Galerie */
+#galerie {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.galerie img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 30px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+#contact a {
+  color: #c79bff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
