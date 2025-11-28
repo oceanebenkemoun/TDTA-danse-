@@ -4,15 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Club TDTA - Cergy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Club TDTA - Cergy</h1>
+  <header class="main-header">
+    <div class="logo">TDTA Cergy</div>
     <nav>
       <ul>
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#styles">Nos Styles</a></li>
+        <li><a href="#valeurs">Notre ADN</a></li>
         <li><a href="#galerie">Galerie</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -20,53 +24,113 @@
   </header>
 
   <section id="accueil" class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2>La passion de la danse à Cergy</h2>
-      <p>Découvrez nos cours de danse pour tous les niveaux dans une ambiance élégante et dynamique.</p>
-      <button id="decouvrirBtn">Découvrir nos cours</button>
+      <p class="eyebrow">Club de danse à Cergy</p>
+      <h1>La passion de la danse, au rythme de Cergy</h1>
+      <p class="lead">Découvrez nos cours pour tous les niveaux dans une ambiance élégante, dynamique et bienveillante.</p>
+      <div class="cta-group">
+        <button id="decouvrirBtn" class="btn primary">Découvrir nos cours</button>
+        <a href="#contact" class="btn ghost">Prendre contact</a>
+      </div>
+      <div class="badges">
+        <span class="badge">Modern Jazz · Street Jazz · Urban</span>
+        <span class="badge">Cours collectifs &amp; préparations scène</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Saison 2024/2025</h3>
+      <ul>
+        <li><strong>Lieu :</strong> Studio Cergy-Préfecture</li>
+        <li><strong>Niveaux :</strong> Débutant à avancé</li>
+        <li><strong>Coachs :</strong> Professeurs diplômés &amp; chorégraphes invités</li>
+      </ul>
+      <div class="accent">Rejoignez une communauté soudée qui danse avec exigence et plaisir.</div>
     </div>
   </section>
 
-  <!-- SECTION STYLES -->
-  <section id="styles">
-    <h2>Nos styles de danse</h2>
+  <section id="styles" class="section">
+    <div class="section-header">
+      <p class="eyebrow">Nos univers</p>
+      <h2>Explorez nos styles de danse</h2>
+      <p class="sub">Des cours structurés, un accompagnement personnalisé et des créations originales toute l'année.</p>
+    </div>
 
     <div class="styles-container">
-      <div class="style">
+      <div class="style" data-description="Technique mêlant précision classique et énergie contemporaine, idéale pour gagner en musicalité.">
         <h3>Modern Jazz</h3>
         <p>Un style mêlant technique classique et énergie moderne.</p>
       </div>
 
-      <div class="style">
+      <div class="style" data-description="Fusion du jazz et des mouvements urbains pour des chorégraphies percutantes et scéniques.">
         <h3>Street Jazz</h3>
         <p>Un mélange de jazz et de mouvements urbains très dynamiques.</p>
       </div>
 
-      <div class="style">
+      <div class="style" data-description="Inspiré des tendances actuelles, parfait pour s'exprimer sur des rythmes urbains et pop.">
         <h3>Urban</h3>
         <p>Un style inspiré des danses urbaines actuelles.</p>
       </div>
 
-      <div class="style">
+      <div class="style" data-description="Une danse expressive axée sur les émotions, le sol et le mouvement libre.">
         <h3>Contemporain</h3>
         <p>Une danse expressive axée sur les émotions et le mouvement libre.</p>
       </div>
 
-      <div class="style">
+      <div class="style" data-description="Sensualité et technique en talons, pour travailler l'attitude et la confiance.">
         <h3>Heels</h3>
         <p>Un style sensuel et technique, dansé en talons.</p>
       </div>
 
-      <div class="style">
+      <div class="style" data-description="Energie, groove et précision sur des beats urbains : la culture Hip-Hop au cœur du club.">
         <h3>Hip-Hop</h3>
         <p>Un style de danse urbaine dynamique et rythmé, né dans la rue.</p>
       </div>
     </div>
+
+    <div id="description" class="description-box" aria-live="polite">Cliquez sur un style pour découvrir son esprit.</div>
   </section>
 
-  <!-- SECTION GALERIE -->
-  <section id="galerie">
-    <h2>Galerie</h2>
+  <section id="valeurs" class="section soft-bg">
+    <div class="section-header">
+      <p class="eyebrow">Notre ADN</p>
+      <h2>Danser avec exigence et bienveillance</h2>
+    </div>
+    <div class="grid infos">
+      <div class="info-card">
+        <h3>Pédagogie structurée</h3>
+        <p>Des cours construits pour progresser en technique, musicalité et confiance scénique.</p>
+      </div>
+      <div class="info-card">
+        <h3>Communauté soudée</h3>
+        <p>Des élèves motivés, des événements internes et des shows pour partager la scène.</p>
+      </div>
+      <div class="info-card">
+        <h3>Coachs inspirants</h3>
+        <p>Professeurs diplômés, chorégraphes invités et ateliers pour nourrir votre créativité.</p>
+      </div>
+    </div>
+    <div class="highlights">
+      <div class="highlight">
+        <span class="number">+120</span>
+        <p>élèves formés chaque saison</p>
+      </div>
+      <div class="highlight">
+        <span class="number">8</span>
+        <p>styles enseignés par des spécialistes</p>
+      </div>
+      <div class="highlight">
+        <span class="number">12</span>
+        <p>créations présentées sur scène en 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="section">
+    <div class="section-header">
+      <p class="eyebrow">En images</p>
+      <h2>Moments forts du club</h2>
+    </div>
     <div class="galerie">
       <img src="images/1.jpg" alt="Cours de danse">
       <img src="images/2.jpg" alt="Spectacle">
@@ -74,10 +138,20 @@
     </div>
   </section>
 
-  <!-- SECTION CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:contact@clubtdta.fr">contact@clubtdta.fr</a></p>
+  <section id="contact" class="section contact">
+    <div class="contact-card">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Écrivez-nous</h2>
+        <p>Email : <a href="mailto:contact@clubtdta.fr">contact@clubtdta.fr</a></p>
+        <p>Adresse : Studio, Cergy-Préfecture</p>
+        <p>Instagram : <a href="https://instagram.com" target="_blank" rel="noreferrer">@club_tdta</a></p>
+      </div>
+      <div class="cta-column">
+        <p>Prêt à monter sur scène ? Réservez un cours d'essai et rejoignez l'aventure TDTA.</p>
+        <a class="btn primary" href="mailto:contact@clubtdta.fr?subject=Cours%20d'essai">Réserver un cours d'essai</a>
+      </div>
+    </div>
   </section>
 
   <footer>

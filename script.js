@@ -1,16 +1,20 @@
-// Petit effet interactif sur le bouton "Découvrir nos cours"
-document.getElementById("decouvrirBtn").addEventListener("click", function() {
-  document.getElementById("styles").scrollIntoView({ behavior: "smooth" });
-});
+// Interaction bouton "Découvrir nos cours"
+const decouvrirBtn = document.getElementById("decouvrirBtn");
+if (decouvrirBtn) {
+  decouvrirBtn.addEventListener("click", () => {
+    document.getElementById("styles")?.scrollIntoView({ behavior: "smooth" });
+  });
+}
 
-
-// --- SCRIPT POUR LES DESCRIPTIONS DES STYLES ---
+// Mise à jour des descriptions de styles
 const styles = document.querySelectorAll('.style');
 const descriptionBox = document.getElementById('description');
 
-styles.forEach(style => {
-  style.addEventListener('click', () => {
-    const text = style.getAttribute('data-description');
-    descriptionBox.textContent = text;
+if (styles.length && descriptionBox) {
+  styles.forEach(style => {
+    style.addEventListener('click', () => {
+      const text = style.getAttribute('data-description');
+      descriptionBox.textContent = text;
+    });
   });
-});
+}
